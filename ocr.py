@@ -35,7 +35,7 @@ def pdf_to_images(pdf_path, output_folder):
         pix.save(f'{output_folder}/page_{page_num+1}.png')  # 最大压缩
 
 # 使用示例
-pdf_name = '高中必刷题数学人教A版必修1.pdf'
+pdf_name = name
 current_file_path = os.path.abspath(__file__)
 pdf_path = os.path.join(os.path.dirname(current_file_path), pdf_name)
 print(pdf_path)
@@ -52,7 +52,7 @@ import os
 import cv2
 import numpy as np
 from PIL import Image
-pdf_name = '高中必刷题数学人教A版必修1.pdf'
+pdf_name = name
 current_file_path = os.path.abspath(__file__)
 pdf_path = os.path.join(os.path.dirname(current_file_path), pdf_name)
 print(pdf_path)
