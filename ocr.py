@@ -145,6 +145,7 @@ current_file_path = os.path.abspath(__file__)
 pdf_path = os.path.join(os.path.dirname(current_file_path), pdf_name)
 print(pdf_path)
 output_folder = f'output_{pdf_name.split(".")[0]}'
+pdf_to_images(pdf_path, output_folder)
 
 pdf_document = fitz.open(pdf_path)
 # 遍历每一页range(len(pdf_document))
